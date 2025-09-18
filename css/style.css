@@ -1,0 +1,137 @@
+
+#home-bg{
+    height: 100vh;
+    background: url("../images/new_bg.jpg");
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    display: inline;
+    margin: 0px 10px 0px 0px;
+}
+
+h1{
+    color: black;
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a{
+    color:black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+ul{
+    padding-left: 0px;
+    margin: 0px;
+}
+.naikeDev{
+    display: flex;
+    align-items: center;
+}
+.nav-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    text-align: end;
+}
+
+.row{
+    background-color: beige;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 5px 10px rgba(208, 208, 201, 0.605);
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+#name_div {
+    flex: 1
+}
+#name_div > h2{
+    font-size: 10em;
+    color: beige;
+    font-family: "Fira Sana", sans-serif;
+    
+}
+#name_div > h3{
+    font-size: 2em;
+}
+#name_div p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+#stack{
+    display: flex;
+    height: 30vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: beige;
+}
+#stack > img{
+    width: 150px;
+    height: 100px;
+}
+#about{
+    background-color: #0c0d0d;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 100px  50px;
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+}
+
+ #myPfp{
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+#details li,  #details p {
+    color: beige;
+}
+
+#details ul {
+    
+}
+
+
+#details {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+
+
+@media (width <= 768px) {
+    nav{
+        text-align: center;
+    }
+    header{
+        text-align: center;
+    }
+}
+
+
