@@ -7,6 +7,23 @@
     display: flex;
     justify-content: center;
 }
+
+header{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    background-color: beige;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    box-shadow: 0px 8px 10px rgba(94, 94, 94, 0.156);
+}
+
+
+
 li{
     list-style: none;
     display: inline;
@@ -47,6 +64,9 @@ nav{
     background-color: beige;
     position: fixed;
     width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     height: 60px;
     box-shadow: 0px 5px 10px rgba(208, 208, 201, 0.605);
 }
@@ -60,8 +80,7 @@ nav{
 #name_div > h2{
     font-size: 10em;
     color: beige;
-    font-family: "Fira Sana", sans-serif;
-    
+    font-family: "Fira Sana", sans-serif; 
 }
 #name_div > h3{
     font-size: 2em;
@@ -103,9 +122,7 @@ nav{
     color: beige;
 }
 
-#details ul {
-    
-}
+
 
 
 #details {
@@ -125,13 +142,73 @@ nav{
 
 
 
-@media (width <= 768px) {
-    nav{
-        text-align: center;
+@media (width <= 1200px) {
+    #home-bg{
+        height: 100%;
+        padding-bottom: 20px;
     }
-    header{
-        text-align: center;
+   .hero{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 60px;
+   }
+   #name_div{
+    width: 100%;
+    flex: none;
+   }
+    #name_div > h2{
+        font-size: 5em;
     }
+    #name_div > h3{
+        font-size: 2em;
+    }
+    #name_div > p {
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+    #stack{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        background-color: beige;
+    }
+    #stack > img{
+        width: 80px;
+        height:50px;
+    }
+    .hero img{
+        height: 400px;
+        width: 300px;
+    }
+    #about{
+        background-color: #0c0d0d;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 100px  50px;
+        justify-items: center;
+    }
+    #details {
+        margin-top: 30px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #details ul {
+        display: grid;
+        row-gap: 10px;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    #proflePicBg{
+        height: 200px;
+        width: 200px;
+    }
+    
 }
 
 
