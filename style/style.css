@@ -160,9 +160,11 @@ nav{
    }
     #name_div > h2{
         font-size: 5em;
+        text-align: center;
     }
     #name_div > h3{
         font-size: 2em;
+        text-align: center;
     }
     #name_div > p {
         font-size: 1.3em;
